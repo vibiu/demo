@@ -1,0 +1,4 @@
+[submodule "libfoo"]
+    path = include/foo
+    url = git://github.com/vibiu/vim/include/foo.git
+
