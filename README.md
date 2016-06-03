@@ -1,2 +1,4 @@
-# demo
-some code demo
+##the use of .vimrc
+    cd vim
+    cp .vimrc ~/.vimrc
+
