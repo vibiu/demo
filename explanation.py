@@ -10,14 +10,14 @@ def main():
     print "这是Alice\'的问候."
     print '这是Bob\'的问候。'
 
-    foo(5,10)
+    foo(5, 10)
 
     print '=' * 10
     print '这将直接执行' + os.getcwd()
 
     counter = 0
     counter += 1
-    
+
     food = ['苹果', '杏子', '李子', '梨']
     for i in food:
         print '俺就爱整只：' + i
@@ -25,6 +25,7 @@ def main():
     print '数到10'
     for i in range(10):
         print i
+
 
 def foo(param1, secondParam):
     res = param1 + secondParam
@@ -39,6 +40,6 @@ def foo(param1, secondParam):
     '''这是多
 行注释......'''
 
+
 if __name__ == '__main__':
     main()
-
