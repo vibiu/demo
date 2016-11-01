@@ -1,0 +1,22 @@
+{
+    "$url_prefix": "/api",
+    "$auth": {
+        "expiration": 172800,
+        "long_expiration": 2592000
+    },
+    "$resjs": "/static/res.js",
+    "$roles": {
+        "normal": {
+            "test": ["get_400", "get_500"]
+        },
+        "office": {
+            "test": ["get_400", "get_500"]
+        },
+        "guest": {
+            "test": ["get_400", "get_500"]
+        },
+        "admin": {
+            "test": ["get_400", "get_500"]
+        }
+    }
+}
