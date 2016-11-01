@@ -11,3 +11,4 @@ Flask-Script==2.0.5
 
 git+https://github.com/guyskk/flask-restaction.git
 validr>=0.12.0
+simple-migrate>=0.0.3

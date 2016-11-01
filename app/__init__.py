@@ -40,7 +40,7 @@ def create_app(config=None):
 
     if config is None:
         config = os.environ.get('FLASK_CONFIG', 'default')
-        config = configs.get(config)
+        config = configs[config]
         app.config.from_object(config)
         config_api(app)
         db.init_app(app)

@@ -22,7 +22,7 @@ class Testing(Default):
     TESTING = True
 
 configs = {
-    'defautl': Default,
+    'default': Default,
     'product': Product,
     'testing': Testing
 }

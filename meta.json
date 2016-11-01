@@ -13,7 +13,8 @@
             "test": ["get_400", "get_500"]
         },
         "guest": {
-            "test": ["get_400", "get_500"]
+            "test": ["get_400", "get_500"],
+            "user": ["get", "post"]
         },
         "admin": {
             "test": ["get_400", "get_500"]
