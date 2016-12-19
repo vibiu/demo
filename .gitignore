@@ -35,3 +35,7 @@ nosetests.xml
 
 # Translations
 *.mo
+
+# virtual environ
+venv/
+

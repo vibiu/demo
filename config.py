@@ -3,7 +3,7 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 
 class Config(object):
-    SECRET_KEY = os.environ.get('SECRRT_KEY') or 'vibiu_s_screat'
+    SECRET_KEY = os.environ.get('SECRET_KEY') or 'vibiu_s_secret'
     # SQLALCHEMY_COMMIT_ON_TEARDOWN = True
     SQLALCHEMY_TRACK_MODIFICATIONS = True
 
