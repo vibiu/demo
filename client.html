@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>websocket demo</title>
+</head>
+<body>
+<div>Websocket demo, please see the console.</div>
+
+<script type="text/javascript">
+    var ws = new Websocket('ws://localhost:8000?token=my_token')
+
+    ws.onopen = function(evt){
+        console.log('connection established...')
+        ws.send('Hello Websockets')
+    }
+
+    ws.onmessage = function(evt) {
+        console.log('recieved message: ' + evt.data)
+    }
+
+    ws.onclose = function(evt) {
+        console.log('connection closed.')
+    }
+
+</script>
+</body>
+</html>
