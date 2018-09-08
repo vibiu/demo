@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ajax demo</title>
+</head>
+<body>
+
+<form id="add_form" action="/host/" method="POST">
+
+    {% csrf_token %} 
+    主机名：<input type="text" name="hostname" id="h1"><span id="error_msg"></span><br>
+    IP：<input type="text" name="IP" id="i1"><br>
+    端口：<input type="text" name="port" id="p1"><br>
+    <select name="agent" id="s1">业务线
+        {% for i in v2 %}
+        <option value="{{i.b_id}}">{{i.b__caption}}</option>
+        {% endfor %}
+    </select>
+    <input type="submit" value="提交" >
+    <input type="button" value="取消" >
+    <a id="a1">ajax提交</a>
+ </form>
+
+</body>
+</html>
