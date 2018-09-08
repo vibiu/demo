@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>demo</title>
+</head>
+<body>
+<form action="/polls/section_post" method="POST">
+    {% csrf_token %}
+    <select class="form-control m-b" name="is_virtual">
+            {% for  is_virtual_i in is_virtual_list %}
+                <!-- <option>{{  is_virtual_i.get_is_virtual_display  }}</option> -->
+                <option value={{is_virtual_i.0}}>{{is_virtual_i.1}}</option>
+            {% endfor %}
+        <option value="option2s" name="op">option 2</option>
+    </select>
+    <input type="submit" name="submit"></input>
+</form>
+
+</body>
+</html>
